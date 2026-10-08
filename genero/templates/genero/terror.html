@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container my-5">
+    <h2 class="text-center text-danger mb-4 fw-bold">{{ genero }}</h2>
+
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+        {% for peli in peliculas %}
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="{% static peli.imagen %}" class="card-img-top" alt="{{ peli.nombre }}" style="height: 300px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">{{ peli.nombre }}</h5>
+                    <p class="card-text text-muted">Estreno: {{ peli.anio }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
