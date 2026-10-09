@@ -1,0 +1,133 @@
+<!--PARA TODAS LAS VISTAS-->
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: rgb(221, 221, 241);
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 30px; 
+}
+
+<!--PARA EL MENÚ-->
+
+
+li{
+    margin: 10px 0;
+}
+
+#m1 { 
+    background-color: rgb(53, 45, 145);
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+#m2 { 
+    background-color: rgb(53, 45, 145);
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ #m3 { 
+    background-color: rgb(53, 45, 145);
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ #m4 { 
+    background-color: rgb(53, 45, 145);
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ #m5 { 
+    background-color: rgb(53, 45, 145);
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ #m6{ 
+    background-color: rgb(53, 45, 145);
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+
+nav ul {
+    display: flex;
+    flex-direction: row;     
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    gap: 5px;                 
+}
+
+nav li {
+    flex: 1; 
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+nav li:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 16px 10px;
+    width: 100%;
+    display: block;
+}
+
+
+h1{
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+h3{
+    font-family: "Viaoda Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#text
+{
+    text-align: justify;
+    word-spacing: 10px;
+    padding: 10px 30px;
+}
+
+#ima {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;  
+}
+
+

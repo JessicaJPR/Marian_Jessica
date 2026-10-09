@@ -1,40 +1,38 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Películas{% endblock %}
+{% block title %}Inicio{% endblock %}
 
 {% block content %}
 
-<div class="row justify-content-center">
-    <div class="col-lg-10">
-        <div class="p-5 bg-white rounded-4 shadow-sm border border-light-subtle text-center">
-            
-            <!-- Encabezado -->
-            <span class="badge bg-primary bg-gradient px-3 py-2 rounded-pill mb-3 text-uppercase fw-semibold">
-                Plataforma Cinematográfica
-            </span>
-            <h1 class="display-5 fw-bold text-dark mb-4">
-                Bienvenido a nuestro Portal de Cine
-            </h1>
-            
-            <!-- Resumen extenso -->
-            <div class="text-secondary fs-5 text-start px-md-4 mb-4" style="line-height: 1.8;">
-                <p>
-                    Este espacio fue diseñado como un catálogo interactivo pensado para los amantes de las buenas historias en pantalla grande. Aquí podrás recorrer una cuidada selección de producciones que han marcado distintas etapas del cine, organizadas de forma intuitiva para que descubras tanto clásicos inolvidables como joyas contemporáneas.
-                </p>
-                <p>
-                    A través de nuestra plataforma tendrás acceso a una clasificación por géneros cinematográficos, permitiéndote explorar en detalle las características de cada categoría, sus años de estreno, fichas informativas y portadas oficiales de cada título. Nuestro propósito es ofrecerte una navegación fluida, limpia y visualmente atractiva para que encuentres tu próxima película favorita en tan solo un par de clics.
-                </p>
-            </div>
 
-            <!-- Botón de acción para pasar a la siguiente página/géneros -->
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
-                <a href="#" class="btn btn-primary btn-lg px-4 gap-3 rounded-pill fw-semibold shadow-sm">
-                    Explorar Catálogo de Géneros 🍿
-                </a>
+
+        <div>
+            <h1>Plataforma Cinematográfica</h1>
+
+            <h3 id="text">Bienvenido a nuestro Portal de Cine</h3>
+            
+            <div id="text">
+                <p>
+                    Este espacio fue diseñado como un catálogo interactivo pensado para los amantes de las buenas historias 
+                    en pantalla grande. Aquí podrás recorrer una cuidada selección de producciones que han marcado distintas 
+                    etapas del cine, organizadas de forma intuitiva para que descubras tanto clásicos inolvidables como joyas 
+                    contemporáneas.
+                </p>
+
+                <p>
+                    A través de nuestra plataforma tendrás acceso a una clasificación por géneros cinematográficos, 
+                    permitiéndote explorar en detalle las características de cada categoría, sus años de estreno, fichas 
+                    informativas y portadas oficiales de cada título. Nuestro propósito es ofrecerte una navegación fluida, 
+                    limpia y visualmente atractiva para que encuentres tu próxima película favorita en tan solo un par de clics.
+                </p>
             </div>
 
         </div>
+
+
+    <div>
+        <!-- Asegúrate de colocar una imagen en static/img/ con este mismo nombre -->
+        <img id="ima" src="{% static 'images/musica.PNG' %}" alt="M" width="600">
     </div>
-</div>
 {% endblock %}
