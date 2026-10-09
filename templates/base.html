@@ -16,7 +16,12 @@
     <header>
         <nav>
             <ul>
-                <li><a href="{% url 'home:home' %}">Home</a></li>
+                <li id="m1"><a href="{% url 'home:home' %}">Home</a></li>
+                <li id="m2"><a class="nav-link" href="{% url 'genero:terror' %}">Terror</a></li>
+                <li id="m3"><a class="nav-link" href="{% url 'genero:crimen' %}">Crimen</a></li>
+                <li id="m4"><a class="nav-link" href="{% url 'genero:comedia' %}">Comedia</a></li>
+                <li id="m5"><a href="{% url 'genero:romance' %}">Romance</a></li>
+                <li id="m6"><a href="{% url 'genero:suspenso' %}">Suspenso</a></li>
             </ul>
         </nav>
     </header>

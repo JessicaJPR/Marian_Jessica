@@ -1,0 +1,73 @@
+<!--PARA TODAS LAS VISTAS-->
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: rgb(212, 212, 244);
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 30px; 
+}
+
+<!--PARA EL MENÚ-->
+
+
+li{
+    margin: 10px 0;
+}
+
+#m1 { background-color: rgb(53, 45, 145); }
+#m2 { background-color: rgb(66, 52, 160); }
+#m3 { background-color: rgb(70, 58, 175); }
+#m4 { background-color: rgb(80, 65, 190); }
+#m5 { background-color: rgb(83, 72, 205); }
+#m6 { background-color: rgb(72, 72, 205); }
+
+nav ul {
+    display: flex;
+    flex-direction: row;     
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    gap: 5px;                 
+}
+
+nav li {
+    flex: 1; 
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+nav li:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 16px 10px;
+    width: 100%;
+    display: block;
+}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div>
+    <h2>{{ genero }}</h2>
+    
+    <div>
+        {% for peli in peliculas %}
+        <div class="col">
+            <div>
+                <img src="{% static peli.imagen %}" alt="{{ peli.nombre }}" style="height: 300px; object-fit: cover;">
+                <div>
+                    <h5 >{{ peli.nombre }}</h5>
+                    <p>Estreno: {{ peli.anio }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
