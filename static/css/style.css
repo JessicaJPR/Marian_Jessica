@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    background-color: rgb(212, 212, 244);
+    background-color: rgb(221, 221, 241);
 }
 
 main {
@@ -29,12 +29,42 @@ li{
     margin: 10px 0;
 }
 
-#m1 { background-color: rgb(53, 45, 145); }
-#m2 { background-color: rgb(66, 52, 160); }
-#m3 { background-color: rgb(70, 58, 175); }
-#m4 { background-color: rgb(80, 65, 190); }
-#m5 { background-color: rgb(83, 72, 205); }
-#m6 { background-color: rgb(72, 72, 205); }
+#m1 { 
+    background-color: rgb(53, 45, 145);
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+#m2 { 
+    background-color: rgb(53, 45, 145);
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ #m3 { 
+    background-color: rgb(53, 45, 145);
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ #m4 { 
+    background-color: rgb(53, 45, 145);
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ #m5 { 
+    background-color: rgb(53, 45, 145);
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ #m6{ 
+    background-color: rgb(53, 45, 145);
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
 
 nav ul {
     display: flex;
@@ -71,3 +101,33 @@ nav a {
     width: 100%;
     display: block;
 }
+
+
+h1{
+    font-family: "Viaoda Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+h3{
+    font-family: "Viaoda Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#text
+{
+    text-align: justify;
+    word-spacing: 10px;
+    padding: 10px 30px;
+}
+
+#ima {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;  
+}
+
+

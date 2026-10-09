@@ -65,16 +65,16 @@ def comedia(request):
 
 def romance(request):
     peliculas = [
-        {"nombre": "Titanic", "anio": 1997, "imagen": "images/titanic.PNG"},
-        {"nombre": "Diario de una Pasión", "anio": 2004, "imagen": "images/diario_de_una_pasion.PNG"},
-        {"nombre": "Orgullo y Prejuicio", "anio": 2005, "imagen": "images/orgullo_y_prejuicio.PNG"},
-        {"nombre": "La La Land", "anio": 2016, "imagen": "images/la_la_land.jpg"},
-        {"nombre": "Eterno Resplandor de una Mente sin Recuerdos", "anio": 2004, "imagen": "images/eterno_resplandor.PNG"},
-        {"nombre": "Yo Antes de Ti", "anio": 2016, "imagen": "images/yo_antes_de_ti.jpg"},
-        {"nombre": "Bajo la Misma Estrella", "anio": 2014, "imagen": "images/bajo_la_misma_estrella.PNG"},
-        {"nombre": "Antes del Amanecer", "anio": 1995, "imagen": "images/antes_del_amanecer.PNG"},
-        {"nombre": "Cuestión de Tiempo", "anio": 2013, "imagen": "images/cuestion_de_tiempo.PNG"},
-        {"nombre": "500 Días con Ella", "anio": 2009, "imagen": "images/500_dias_con_ella.PNG"},
+        {"nombre": "Titanic", "anio": 1997, "imagen": "images/titanic.PNG", "descripcion": "Un joven artista y una chica de clase alta se enamoran a bordo del transatlántico más famoso de la historia."},
+        {"nombre": "Diario de una Pasión", "anio": 2004, "imagen": "images/diario_de_una_pasion.PNG", "descripcion": "Un romance apasionado entre dos jóvenes de distintas clases sociales marcado por las cartas y el paso del tiempo."},
+        {"nombre": "Orgullo y Prejuicio", "anio": 2005, "imagen": "images/orgullo_y_prejuicio.PNG", "descripcion": "Elizabeth Bennet y el orgulloso señor Darcy enfrentan malentendidos y diferencias sociales en la Inglaterra rural."},
+        {"nombre": "La La Land", "anio": 2016, "imagen": "images/la_la_land.PNG", "descripcion": "Una aspirante a actriz y un pianista de jazz luchan por alcanzar sus sueños profesionales en Los Ángeles."},
+        {"nombre": "Eterno Resplandor de una Mente sin Recuerdos", "anio": 2004, "imagen": "images/eterno_resplandor.PNG", "descripcion": "Una expareja decide someterse a un procedimiento médico para borrar mutuamente los recuerdos de su fallida relación."},
+        {"nombre": "Yo Antes de Ti", "anio": 2016, "imagen": "images/yo_antes_de_ti.PNG", "descripcion": "Una joven alegre y peculiar es contratada para cuidar a un adinerado banquero que quedó tetrapléjico tras un accidente."},
+        {"nombre": "Bajo la Misma Estrella", "anio": 2014, "imagen": "images/bajo_la_misma_estrella.PNG", "descripcion": "Dos adolescentes que se conocen en un grupo de apoyo para pacientes con cáncer emprenden un viaje juntos."},
+        {"nombre": "Antes del Amanecer", "anio": 1995, "imagen": "images/antes_del_amanecer.PNG", "descripcion": "Un joven estadounidense y una estudiante francesa se conocen en un tren y pasan una noche inolvidable recorriendo Viena."},
+        {"nombre": "Cuestión de Tiempo", "anio": 2013, "imagen": "images/cuestion_de_tiempo.PNG", "descripcion": "Un joven descubre que los hombres de su familia pueden viajar en el tiempo e intenta conquistar al amor de su vida."},
+        {"nombre": "500 Días con Ella", "anio": 2009, "imagen": "images/500_dias_con_ella.PNG", "descripcion": "Un redactor de tarjetas reflexiona de forma no lineal sobre los 500 días que pasó junto a una mujer escéptica del amor."},
     ]
     context = {
         'genero': 'Romance',
@@ -82,22 +82,23 @@ def romance(request):
     }
     return render(request, 'genero/romance.html', context)
 
-# ---------------------------------------------------------
+
+# --------------------------------------------------
 # VISTA 3: SUSPENSO
-# ---------------------------------------------------------
+# --------------------------------------------------
 
 def suspenso(request):
     peliculas = [
-        {"nombre": "Perdida (Gone Girl)", "anio": 2014, "imagen": "images/gone_girl.PNG"},
-        {"nombre": "El Silencio de los Inocentes", "anio": 1991, "imagen": "images/silencio_inocentes.PNG"},
-        {"nombre": "Los Otros (The Others)", "anio": 2001, "imagen": "images/the_others.PNG"},
-        {"nombre": "El Sexto Sentido", "anio": 1999, "imagen": "images/sexto_sentido.PNG"},
-        {"nombre": "La Isla Siniestra", "anio": 2010, "imagen": "images/isla_siniestra.PNG"},
-        {"nombre": "Fragmentado", "anio": 2016, "imagen": "images/fragmentado.PNG"},
-        {"nombre": "Prisioneros", "anio": 2013, "imagen": "images/prisioneros.PNG"},
-        {"nombre": "Corre (Run)", "anio": 2020, "imagen": "images/run.PNG"},
-        {"nombre": "El Club de la Pelea", "anio": 1999, "imagen": "images/fight_club.PNG"},
-        {"nombre": "El Efecto Mariposa", "anio": 2004, "imagen": "images/efecto_mariposa.PNG"},
+        {"nombre": "Perdida (Gone Girl)", "anio": 2014, "imagen": "images/gone_girl.PNG", "descripcion": "La misteriosa desaparición de una mujer en su aniversario de bodas convierte a su esposo en el principal sospechoso."},
+        {"nombre": "El Silencio de los Inocentes", "anio": 1991, "imagen": "images/silencio_inocentes.PNG", "descripcion": "Una joven agente del FBI recurre a la ayuda del brillante caníbal Hannibal Lecter para atrapar a un asesino serial."},
+        {"nombre": "Los Otros (The Others)", "anio": 2001, "imagen": "images/the_others.PNG", "descripcion": "Una madre protege a sus hijos fotosensibles en una mansión aislada donde extrañas presencias comienzan a manifestarse."},
+        {"nombre": "El Sexto Sentido", "anio": 1999, "imagen": "images/sexto_sentido.PNG", "descripcion": "Un psicólogo infantil intenta ayudar a un niño atormentado por su capacidad para ver y comunicarse con los muertos."},
+        {"nombre": "La Isla Siniestra", "anio": 2010, "imagen": "images/isla_siniestra.PNG", "descripcion": "Dos agentes federales viajan a un hospital psiquiátrico en una isla remota para investigar la fuga de una peligrosa reclusa."},
+        {"nombre": "Fragmentado", "anio": 2016, "imagen": "images/fragmentado.PNG", "descripcion": "Un hombre con 23 personalidades distintas secuestra a tres adolescentes mientras una oscura entidad amenaza con emerger."},
+        {"nombre": "Prisioneros", "anio": 2013, "imagen": "images/prisioneros.PNG", "descripcion": "Tras la desaparición de su hija pequeña y ante la falta de pistas policiales, un padre desesperado toma la justicia en sus manos."},
+        {"nombre": "Corre (Run)", "anio": 2020, "imagen": "images/run.PNG", "descripcion": "Una adolescente en silla de ruedas comienza a sospechar de los oscuros secretos que oculta su sobreprotectora madre."},
+        {"nombre": "El Club de la Pelea", "anio": 1999, "imagen": "images/fight_club.PNG", "descripcion": "Un oficinista insomne y un carismático vendedor de jabón forman un club clandestino con reglas brutales."},
+        {"nombre": "El Efecto Mariposa", "anio": 2004, "imagen": "images/efecto_mariposa.PNG", "descripcion": "Un joven descubre cómo viajar a su infancia leyendo sus viejos diarios, pero cada cambio que realiza altera drásticamente su presente."},
     ]
     context = {
         'genero': 'Suspenso',

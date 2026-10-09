@@ -5,14 +5,14 @@
 
 {% block content %}
 
-<div>
-    <div>
+
+
         <div>
             <h1>Plataforma Cinematográfica</h1>
 
-            <h3>Bienvenido a nuestro Portal de Cine</h3>
+            <h3 id="text">Bienvenido a nuestro Portal de Cine</h3>
             
-            <div>
+            <div id="text">
                 <p>
                     Este espacio fue diseñado como un catálogo interactivo pensado para los amantes de las buenas historias 
                     en pantalla grande. Aquí podrás recorrer una cuidada selección de producciones que han marcado distintas 
@@ -29,6 +29,10 @@
             </div>
 
         </div>
+
+
+    <div>
+        <!-- Asegúrate de colocar una imagen en static/img/ con este mismo nombre -->
+        <img id="ima" src="{% static 'images/musica.PNG' %}" alt="M" width="600">
     </div>
-</div>
 {% endblock %}
